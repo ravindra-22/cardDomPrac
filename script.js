@@ -1,8 +1,7 @@
 let container = document.getElementById('container');
 let main = document.querySelector('main');
 
-let sum = 0;
-
+let sum = '';
 
 const users = [
     {
@@ -106,3 +105,7 @@ const users = [
         profilePhoto: "https://imgix.ranker.com/list_img_v2/4986/2784986/original/best-thor-odinson-quotes?fit=crop&fm=pjpg&q=80&dpr=2&w=1200&h=720",
     },
 ];
+
+users.forEach(function(value){
+console.log(value)
+})
