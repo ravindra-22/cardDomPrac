@@ -107,5 +107,31 @@ const users = [
 ];
 
 users.forEach(function(value){
-console.log(value)
+    sum += `<div id="container">
+        <div class="top">
+          ${value.available ? `<p>available</p>` : `<span></span>`}
+          <h3>$${value.rate}/hr</h3>
+        </div>
+        <div class="mid">
+          <img src="${value.profilePhoto}" alt="" />
+          <h2> ${value.fullName}</h2>
+          <p>${value.designation}</p>
+          <p id="epic">${value.company}</p>
+        </div>
+        <div class="skills">
+          <p>UI</p>
+          <p>UX</p>
+          <p>photoshop</p>
+          <p>+4</p>
+        </div>
+        <div class="data">
+          <p>
+            Wade is a 32 year old UI/UX designer, with an impressive portfolio
+            behind him
+          </p>
+        </div>
+        <a href="#">VIEW PROFILE</a>
+      </div>`
+
+      main.innerHTML = sum;
 })
