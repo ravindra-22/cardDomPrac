@@ -3,6 +3,7 @@ let main = document.querySelector('main');
 
 let sum = 0;
 
+
 const users = [
     {
         fullName: "Wade Wilson",
